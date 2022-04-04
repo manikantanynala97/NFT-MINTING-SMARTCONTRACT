@@ -4,7 +4,7 @@ require("dotenv").config({path:".env"});
  async function main()
  {
    // URL for the metadata we can extract the metadata from LW3Punks
-   const metadataURL = "ipfs://QmUmoPvsxSjySMkZTQdUHJdkrEKZzXfMhMCGBFGzcdvdhB"
+   const metadataURL = "ipfs://QmUmoPvsxSjySMkZTQdUHJdkrEKZzXfMhMCGBFGzcdvdhB/"
 
    const lw3PunksContract = await ethers.getContractFactory("LW3Punks");
    const deployedLW3PunksContract = await lw3PunksContract.deploy(metadataURL);
